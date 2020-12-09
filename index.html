@@ -3,62 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef3db5a6d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href=maquette.css>
-    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=roboto:wght@300;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
+    <title>Ohmyfood: Accueil</title>
 </head>
 <body>
-    <header>
-        <!--put id and icon-->
-        <div id="first">
-            <input type="search" placeholder="Paris, Belleville">
-            <h1>Réservez le menu qui vous convient</h1>
-            <h5>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h5>
-            <p>Explorez nos restaurants</p>
-        </div>
-        <div id="second"><!--put icons and number-->
-           <h1>Fonctionnement</h1>
-           <p>Choisissez un nrestaurant</p>
-           <p>Composez votre menu</p>
-           <p>Dégustez au restaurant</p><!--color icon-->
-        </div>
-    </header>
-    <section id="restaurants"><!--add animation heart icon-->
-        <h1>Restaurants</h1>
-        <figure class="choice"><!--new-->
-            <img src="images/restaurants/lapalette.jpg" alt="Restaurant la palette du goût">
-            <figcaption>
-                <p>La palette du goût</p><!--heart icon-->
-                <p>Ménilmontant</p>
-            </figcaption>
-        </figure>
-        <figure class="choice"><!--new-->
-            <img src="images/restaurants/lanote.jpg" alt="Restaurant la note enchantée">
-            <figcaption>
-                <p>La note enchnatée</p><!--heart icon-->
-                <p>Charonne</p>
-            </figcaption>
-        </figure>
-        <figure class="choice">
-            <img src="images/restaurants/àlafrançaise.jpg" alt="Restaurant à la française">
-            <figcaption>
-                <p>À la française</p><!--heart icon-->
-                <p>Cité Rouge</p>
-            </figcaption>
-        </figure>
-        <figure class="choice">
-            <img src="images/restaurants/ledelice.jpg" alt="Restaurant le délice des sens">
-            <figcaption>
-                <p>Le délice des sens</p><!--heart icon-->
-                <p>Folie-Méricourt</p>
-            </figcaption>
-        </figure>
+    <div>
+        <header>
+            <!--icon-->
+            <div id="first">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" placeholder="Paris, Belleville">
+                <h1>Réservez le menu qui vous convient</h1>
+                <h5>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h5>
+                <p>Explorez nos restaurants</p>
+            </div>
+            <div id="second"><!--put icons and number-->
+            <h2>Fonctionnement</h2>
+            <p><span class="number">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+            <p><span class="number">2</span><i class="fas fa-list-ul"></i>Composez votre menu</p>
+            <p><span class="number">3</span><i class="fas fa-store"></i>Dégustez au restaurant</p><!--color icon-->
+            </div>
+        </header>
+        <section id="restaurants"><!--add animation heart icon-->
+            <h2>Restaurants</h2>
+            <figure class="choice"><!--new-->
+                <img src="images/restaurants/lapalette.jpg" alt="Restaurant la palette du goût">
+                <figcaption>
+                    <p>La palette du goût</p><!--heart icon-->
+                    <i class="far fa-heart"></i>
+                    <p>Ménilmontant</p>
+                </figcaption>
+            </figure>
+            <figure class="choice"><!--new-->
+                <img src="images/restaurants/lanote.jpg" alt="Restaurant la note enchantée" id="rotate">
+                <figcaption>
+                    <p>La note enchantée</p><!--heart icon-->
+                    <i class="far fa-heart"></i>
+                    <p>Charonne</p>
+                </figcaption>
+            </figure>
+            <figure class="choice">
+                <img src="images/restaurants/àlafrançaise.jpg" alt="Restaurant à la française">
+                <figcaption>
+                    <p>À la française</p><!--heart icon-->
+                    <i class="far fa-heart"></i>
+                    <p>Cité Rouge</p>
+                </figcaption>
+            </figure>
+            <figure class="choice">
+                <img src="images/restaurants/ledelice.jpg" alt="Restaurant le délice des sens">
+                <figcaption>
+                    <p>Le délice des sens</p><!--heart icon-->
+                    <i class="far fa-heart"></i>
+                    <p>Folie-Méricourt</p>
+                </figcaption>
+            </figure>
+        </section>
         <footer>
             <p>Ohmyfood</p>
             <p>Proposer un restaurant</p>
             <p>Devenir un partenaire</p>
             <p><a href="#">Mentions légales</a></p>
-            <input type="email" name="mail" placeholder="email" id="mail">
+            <p><a href="#">Contact</a></p>
         </footer>
-    </section>
+    </div>
 </body>
 </html>
