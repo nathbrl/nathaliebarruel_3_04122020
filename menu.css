@@ -1,0 +1,8 @@
+#order-btn{
+    color: white;
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}

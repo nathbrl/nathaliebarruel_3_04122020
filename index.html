@@ -4,63 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ef3db5a6d8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href=maquette.css>
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=roboto:wght@300;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
     <title>Ohmyfood: Accueil</title>
 </head>
 <body>
-    <div>
+    <div id="container">
         <header>
-            <!--icon-->
-            <div id="first">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" placeholder="Paris, Belleville">
-                <h1>Réservez le menu qui vous convient</h1>
-                <h5>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h5>
-                <p>Explorez nos restaurants</p>
+            <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" id="logo"/>
+            <p id="presentation">
+                <span class="title">Ohmyfood</span> est une entreprise de commande de repas en ligne.
+                Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.
+                Plus de perte de temps à consulter la carte. Nous souhaitons proposer à nos clients les menus de restaurants gastronomiques.
+                Développé à New-York dans un premier temps, nous souhaitons désormais élargir notre concept à la capitale de la gastronomie : Paris.
+            </p>
+            <div id="first"><!--map icon-->
+                <div id="search-bar">
+                    <form action="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                        <input type="search" name="search" placeholder="Paris, Belleville"/>
+                    </form>
+                </div>
+                <h2>Réservez le menu qui vous convient</h2>
+                <h4>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h4>
+                <a href="#restaurants">
+                    <span class="explore-btn">Explorez nos restaurants</span>
+                </a>
             </div>
             <div id="second"><!--put icons and number-->
-            <h2>Fonctionnement</h2>
-            <p><span class="number">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
-            <p><span class="number">2</span><i class="fas fa-list-ul"></i>Composez votre menu</p>
-            <p><span class="number">3</span><i class="fas fa-store"></i>Dégustez au restaurant</p><!--color icon-->
+            <h4>Fonctionnement</h4>
+                <!--<div class="operation"> list or div?
+                    <p><span class="number">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+                </div>
+                <div class="operation">
+                    <p><span class="number">2</span><i class="fas fa-list-ul"></i>Composez votre menu</p>
+                </div>
+                <div class="operation">
+                    <p><span class="number">3</span><i class="fas fa-store"></i>Dégustez au restaurant</p>color icon
+                </div> -->
+                <ul id="operation">
+                    <li>
+                        <span class="number">1</span><i class="fas fa-mobile-alt "></i>Choisissez un restaurant
+                    </li>
+                    <li>
+                        <span class="number">2</span><i class="fas fa-list "></i>Composez votre menu
+                    </li>
+                    <li id="operation-variant">
+                        <span class="number">3</span><i class="fas fa-store icon"></i>Dégustez au restaurant
+                    </li><!--color icon-->
+                </ul>
             </div>
         </header>
         <section id="restaurants"><!--add animation heart icon-->
-            <h2>Restaurants</h2>
-            <figure class="choice"><!--new-->
-                <img src="images/restaurants/lapalette.jpg" alt="Restaurant la palette du goût">
-                <figcaption>
-                    <p>La palette du goût</p><!--heart icon-->
-                    <i class="far fa-heart"></i>
-                    <p>Ménilmontant</p>
-                </figcaption>
-            </figure>
-            <figure class="choice"><!--new-->
-                <img src="images/restaurants/lanote.jpg" alt="Restaurant la note enchantée" id="rotate">
-                <figcaption>
-                    <p>La note enchantée</p><!--heart icon-->
-                    <i class="far fa-heart"></i>
-                    <p>Charonne</p>
-                </figcaption>
-            </figure>
-            <figure class="choice">
-                <img src="images/restaurants/àlafrançaise.jpg" alt="Restaurant à la française">
-                <figcaption>
-                    <p>À la française</p><!--heart icon-->
-                    <i class="far fa-heart"></i>
-                    <p>Cité Rouge</p>
-                </figcaption>
-            </figure>
-            <figure class="choice">
-                <img src="images/restaurants/ledelice.jpg" alt="Restaurant le délice des sens">
-                <figcaption>
-                    <p>Le délice des sens</p><!--heart icon-->
-                    <i class="far fa-heart"></i>
-                    <p>Folie-Méricourt</p>
-                </figcaption>
-            </figure>
+            <h4>Restaurants</h4>
+            <a href="menu_la_palette_du_goût.html">
+                <figure class="choice"><!--new-->
+                    <img src="images/restaurants/lapalette.jpg" alt="Restaurant la palette du goût"/>
+                    <figcaption>
+                        <p>La palette du goût</p><!--heart icon-->
+                        <i class="far fa-heart"></i>
+                        <p>Ménilmontant</p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="menu_la_note_enchantée.html">
+                <figure class="choice"><!--new-->
+                    <img src="images/restaurants/lanote.jpg" alt="Restaurant la note enchantée" id="rotate"/>
+                    <figcaption>
+                        <p>La note enchantée</p><!--heart icon-->
+                        <i class="far fa-heart"></i>
+                        <p>Charonne</p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="menu_à_la_française.html">
+                <figure class="choice">
+                    <img src="images/restaurants/àlafrançaise.jpg" alt="Restaurant à la française"/>
+                    <figcaption>
+                        <p>À la française</p><!--heart icon-->
+                        <i class="far fa-heart"></i>
+                        <p>Cité Rouge</p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="menu_le_délice_des_sens.html">
+                <figure class="choice">
+                    <img src="images/restaurants/ledelice.jpg" alt="Restaurant le délice des sens"/>
+                    <figcaption>
+                        <p>Le délice des sens</p><!--heart icon-->
+                        <i class="far fa-heart"></i>
+                        <p>Folie-Méricourt</p>
+                    </figcaption>
+                </figure>
+            </a>
         </section>
         <footer>
             <p>Ohmyfood</p>
