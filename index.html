@@ -33,7 +33,7 @@
                 </a>
             </div>
             <div id="second"><!--put icons and number-->
-            <h4>Fonctionnement</h4>
+            <h3>Fonctionnement</h3>
                 <!--<div class="operation"> list or div?
                     <p><span class="number">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
                 </div>
@@ -45,10 +45,10 @@
                 </div> -->
                 <ul id="operation">
                     <li>
-                        <span class="number">1</span><i class="fas fa-mobile-alt "></i>Choisissez un restaurant
+                        <span class="number">1</span><i class="fas fa-mobile-alt icon"></i>Choisissez un restaurant
                     </li>
                     <li>
-                        <span class="number">2</span><i class="fas fa-list "></i>Composez votre menu
+                        <span class="number">2</span><i class="fas fa-list icon"></i>Composez votre menu
                     </li>
                     <li id="operation-variant">
                         <span class="number">3</span><i class="fas fa-store icon"></i>Dégustez au restaurant
@@ -57,52 +57,50 @@
             </div>
         </header>
         <section id="restaurants"><!--add animation heart icon-->
-            <h4>Restaurants</h4>
-            <a href="menu_la_palette_du_goût.html">
-                <figure class="choice"><!--new-->
-                    <img src="images/restaurants/lapalette.jpg" alt="Restaurant la palette du goût"/>
-                    <figcaption>
-                        <p>La palette du goût</p><!--heart icon-->
-                        <i class="far fa-heart"></i>
-                        <p>Ménilmontant</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="menu_la_note_enchantée.html">
-                <figure class="choice"><!--new-->
-                    <img src="images/restaurants/lanote.jpg" alt="Restaurant la note enchantée" id="rotate"/>
-                    <figcaption>
-                        <p>La note enchantée</p><!--heart icon-->
-                        <i class="far fa-heart"></i>
-                        <p>Charonne</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="menu_à_la_française.html">
-                <figure class="choice">
-                    <img src="images/restaurants/àlafrançaise.jpg" alt="Restaurant à la française"/>
-                    <figcaption>
-                        <p>À la française</p><!--heart icon-->
-                        <i class="far fa-heart"></i>
-                        <p>Cité Rouge</p>
-                    </figcaption>
-                </figure>
-            </a>
-            <a href="menu_le_délice_des_sens.html">
-                <figure class="choice">
-                    <img src="images/restaurants/ledelice.jpg" alt="Restaurant le délice des sens"/>
-                    <figcaption>
-                        <p>Le délice des sens</p><!--heart icon-->
-                        <i class="far fa-heart"></i>
-                        <p>Folie-Méricourt</p>
-                    </figcaption>
-                </figure>
-            </a>
+            <div id="menu">
+                <h3>Restaurants</h3>
+                <a href="menu_la_palette_du_goût.html">
+                    <figure class="choice"><!--new-->
+                        <img src="images/restaurants/lapalette.jpg" alt="Restaurant la palette du goût"/>
+                        <figcaption>
+                            <div class="bold">La palette du goût<!--heart icon--><i class="far fa-heart"></i></div>
+                            <p>Ménilmontant</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="menu_la_note_enchantée.html">
+                    <figure class="choice"><!--new-->
+                        <img src="images/restaurants/lanote.jpg" alt="Restaurant la note enchantée" id="rotate"/>
+                        <figcaption>
+                            <div class="bold">La note enchantée<i class="far fa-heart"></i></div>
+                            <p>Charonne</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="menu_à_la_française.html">
+                    <figure class="choice">
+                        <img src="images/restaurants/àlafrançaise.jpg" alt="Restaurant à la française"/>
+                        <figcaption>
+                            <div class="bold">À la française<i class="far fa-heart"></i></div>
+                            <p>Cité Rouge</p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="menu_le_délice_des_sens.html">
+                    <figure class="choice">
+                        <img src="images/restaurants/ledelice.jpg" alt="Restaurant le délice des sens"/>
+                        <figcaption>
+                            <div class="bold">Le délice des sens<i class="far fa-heart"></i></div>
+                            <p>Folie-Méricourt</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
         </section>
         <footer>
-            <p>Ohmyfood</p>
-            <p>Proposer un restaurant</p>
-            <p>Devenir un partenaire</p>
+            <p><span class="title">Ohmyfood</span></p>
+            <p><i class="fas fa-utensils footer-icon"></i>Proposer un restaurant</p>
+            <p><i class="fas fa-hands-helping footer-icon"></i>Devenir un partenaire</p>
             <p><a href="#">Mentions légales</a></p>
             <p><a href="#">Contact</a></p>
         </footer>
