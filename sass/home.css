@@ -21,36 +21,48 @@ header {
   padding-bottom: 30px;
 }
 
-.title {
+#title {
   font-family: 'Shrikhand', cursive;
   font-style: italic;
+  font-size: 14px;
 }
 
 #presentation {
   text-align: center;
 }
 
+p {
+  font-size: 14px;
+}
+
 img {
   width: 100%;
-  height: 100px;
+  height: auto;
+  max-height: 200px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new {
+  position: absolute;
+  right: 22%;
+  background: #99e2d0;
+  padding: 5px 10px 5px 10px;
+  color: darkgreen;
 }
 
 #logo {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-#rotate {
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
 input {
@@ -65,9 +77,9 @@ input {
   display: block;
   border: inset 2px lightgray;
   text-align: center;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin: 0 30% 0 30%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: 0 20% 0 20%;
   background-color: #e4e2e2;
 }
 
@@ -87,6 +99,22 @@ a {
 }
 
 #second {
+  padding: 0 20% 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+#menu {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +129,18 @@ a {
 }
 
 #operation {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  text-align: center;
 }
 
 #operation-variant {
@@ -109,7 +148,7 @@ a {
   color: #9356dc;
 }
 
-li, icon {
+li {
   background-color: #e4e2e2;
   border-radius: 20px;
   padding: 10px 20px 10px 0px;
@@ -153,11 +192,32 @@ ul {
   background-color: rgba(235, 235, 235, 0.973);
 }
 
+.bold {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+h2, h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: normal;
+}
+
 figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 305px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -170,6 +230,8 @@ figure {
   margin: 0;
   background-color: white;
   border-radius: 20px;
+  -webkit-box-shadow: 5px 6px 6px lightgray;
+          box-shadow: 5px 6px 6px lightgray;
 }
 
 figcaption {
@@ -184,27 +246,35 @@ figcaption {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 20px;
+  padding-right: 20px;
   padding-top: 5px;
 }
 
-.heart {
+.heart:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
+.link {
+  margin-bottom: 20px;
+}
+
+/*footer*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: black;
   padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: white;
   text-align: justify;
 }

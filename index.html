@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://kit.fontawesome.com/ef3db5a6d8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=roboto:wght@300;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
+    <link rel="stylesheet" href="sass/home.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=roboto:wght@300;700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"/>
     <title>Ohmyfood: Accueil</title>
 </head>
 <body>
     <div id="container">
         <header>
             <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" id="logo"/>
-            <p id="presentation">
-                <span class="title">Ohmyfood</span> est une entreprise de commande de repas en ligne.
-                Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.
-                Plus de perte de temps à consulter la carte. Nous souhaitons proposer à nos clients les menus de restaurants gastronomiques.
-                Développé à New-York dans un premier temps, nous souhaitons désormais élargir notre concept à la capitale de la gastronomie : Paris.
-            </p>
+            <div id="presentation">
+                <p>Ohmyfood est une entreprise de commande de repas en ligne.</p>
+                <p>Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.</p>
+                <p>Plus de perte de temps à consulter la carte. Nous souhaitons proposer à nos clients les menus de restaurants gastronomiques.</p>
+                <p>Développé à New-York dans un premier temps, nous souhaitons désormais élargir notre concept à la capitale de la gastronomie : Paris.</p>
+            </div>
             <div id="first"><!--map icon-->
                 <div id="search-bar">
                     <form action="#">
@@ -59,38 +59,40 @@
         <section id="restaurants"><!--add animation heart icon-->
             <div id="menu">
                 <h3>Restaurants</h3>
-                <a href="menu_la_palette_du_goût.html">
+                <a href="menu_la_palette_du_goût.html" class="link">
                     <figure class="choice"><!--new-->
                         <img src="images/restaurants/lapalette.jpg" alt="Restaurant la palette du goût"/>
+                        <span class="new">Nouveau</span>
                         <figcaption>
-                            <div class="bold">La palette du goût<!--heart icon--><i class="far fa-heart"></i></div>
+                            <div class="bold">La palette du goût<!--heart icon--><i class="far fa-heart heart"></i></div>
                             <p>Ménilmontant</p>
                         </figcaption>
                     </figure>
                 </a>
-                <a href="menu_la_note_enchantée.html">
+                <a href="menu_la_note_enchantée.html" class="link">
                     <figure class="choice"><!--new-->
-                        <img src="images/restaurants/lanote.jpg" alt="Restaurant la note enchantée" id="rotate"/>
+                        <img src="images/restaurants/lanote.jpg" alt="Restaurant la note enchantée"/>
+                        <span class="new">Nouveau</span>
                         <figcaption>
-                            <div class="bold">La note enchantée<i class="far fa-heart"></i></div>
+                            <div class="bold">La note enchantée<i class="far fa-heart heart"></i></div>
                             <p>Charonne</p>
                         </figcaption>
                     </figure>
                 </a>
-                <a href="menu_à_la_française.html">
+                <a href="menu_à_la_française.html" class="link">
                     <figure class="choice">
                         <img src="images/restaurants/àlafrançaise.jpg" alt="Restaurant à la française"/>
                         <figcaption>
-                            <div class="bold">À la française<i class="far fa-heart"></i></div>
+                            <div class="bold">À la française<i class="far fa-heart heart"></i></div>
                             <p>Cité Rouge</p>
                         </figcaption>
                     </figure>
                 </a>
-                <a href="menu_le_délice_des_sens.html">
+                <a href="menu_le_délice_des_sens.html" class="link">
                     <figure class="choice">
                         <img src="images/restaurants/ledelice.jpg" alt="Restaurant le délice des sens"/>
                         <figcaption>
-                            <div class="bold">Le délice des sens<i class="far fa-heart"></i></div>
+                            <div class="bold">Le délice des sens<i class="far fa-heart heart"></i></div>
                             <p>Folie-Méricourt</p>
                         </figcaption>
                     </figure>
@@ -98,9 +100,9 @@
             </div>
         </section>
         <footer>
-            <p><span class="title">Ohmyfood</span></p>
-            <p><i class="fas fa-utensils footer-icon"></i>Proposer un restaurant</p>
-            <p><i class="fas fa-hands-helping footer-icon"></i>Devenir un partenaire</p>
+            <p><span id="title">Ohmyfood</span></p>
+            <p><a href="#"><i class="fas fa-utensils footer-icon"></i>Proposer un restaurant</a></p>
+            <p><a href="#"><i class="fas fa-hands-helping footer-icon"></i>Devenir un partenaire</a></p>
             <p><a href="#">Mentions légales</a></p>
             <p><a href="#">Contact</a></p>
         </footer>

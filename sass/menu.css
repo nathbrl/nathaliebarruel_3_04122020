@@ -1,0 +1,53 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 900px;
+  margin: auto;
+  padding: 0%;
+}
+
+#menu-1,
+#menu-2,
+#menu-3,
+#menu-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 800px;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+.menu-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.picture {
+  width: 250px;
+  height: auto;
+}
+
+.arrow {
+  color: black;
+}
+/*# sourceMappingURL=menu.css.map */
