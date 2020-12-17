@@ -7,27 +7,82 @@ body {
 #menu-1,
 #menu-2,
 #menu-3,
-#menu-4,{
+#menu-4{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 800px;
   height: auto;
-
+  background-color: rgba(235, 235, 235, 0.973);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 h1{
   font-family: 'Shrikhand', cursive;
+  text-align: center;
+}
+h3{
+  padding-left: 10px;
+}
+#menu-title{
+  display: flex;
+  justify-content: space-between;
 }
 .menu-logo{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  width: 300px;
+}
+#title{
+  font-family: 'Shrikhand', cursive;
+}
+.dishes{
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 6px 6px lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .picture{
-  width: 250px;
-  height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .arrow{
   color: black;
+}
+.order-btn{
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+.bold{
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+/*footer*/
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: justify;
 }

@@ -21,10 +21,39 @@ body {
           justify-content: center;
   width: 800px;
   height: auto;
+  background-color: rgba(235, 235, 235, 0.973);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 h1 {
   font-family: 'Shrikhand', cursive;
+  text-align: center;
+}
+
+h3 {
+  padding-left: 10px;
+}
+
+#menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-logo {
@@ -40,14 +69,74 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 300px;
+}
+
+#title {
+  font-family: 'Shrikhand', cursive;
+}
+
+.dishes {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 6px 6px lightgray;
+          box-shadow: 5px 6px 6px lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .picture {
-  width: 250px;
-  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .arrow {
   color: black;
+}
+
+.order-btn {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.bold {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: black;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: justify;
 }
 /*# sourceMappingURL=menu.css.map */
