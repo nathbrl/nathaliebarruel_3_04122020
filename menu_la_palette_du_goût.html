@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ef3db5a6d8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href=menu.css>
+    <link rel="stylesheet" type="text/css" href=sass/menu.css>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=roboto:wght@300;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
     <title>Ohmyfood: La palette du goût</title>
@@ -19,46 +19,46 @@
         <h1>La palette du goût</h1><i class="far fa-heart"></i>
         <div class="first-course">
             <h3>ENTREES</h3><!--capitalise-->
-            <div>
-                <p>Fricassée d'escargot</p><!--bold-->
+            <div class="dishes">
+                <p class="bold">Fricassée d'escargot</p><!--bold-->
                 <p>Au piment d'espelette 25&euro;</p>
             </div>
-            <div>
-                <p>Foie gras de canard mi-cuit</p>
+            <div class="dishes">
+                <p class="bold">Foie gras de canard mi-cuit</p>
                 <p>Et ses copaux de truffe noire 35&euro;</p>
             </div>
-            <div>
-                <p>oeuf au plat</p>
+            <div class="dishes">
+                <p class="bold">oeuf au plat</p>
                 <p>Assaisonné à la truffe sur lit de...20&euro;</p>
             </div>
         </div>
         <div class="second-course">
             <h3>PLATS</h3><!--capitalise-->
-            <div>
-                <p>Filet de boeuf aux herbes</p><!--bold-->
+            <div class="dishes">
+                <p class="bold">Filet de boeuf aux herbes</p><!--bold-->
                 <p>Accompagné de sa ribambelle de légu... 40&euro;</p>
             </div>
-            <div>
-                <p>Parmentier de queu de boeuf</p>
+            <div class="dishes">
+                <p class="bold">Parmentier de queu de boeuf</p>
                 <p>À la truffe noire sur sa purée de panais 35&euro;</p>
             </div>
-            <div>
-                <p>Filet de turbot</p>
+            <div class="dishes">
+                <p class="bold">Filet de turbot</p>
                 <p>Aux agrumes 44&euro;</p>
             </div>
         </div>
         <div class="final-course">
             <h3>DESSERTS</h3><!--capitalise-->
-            <div>
-                <p>Paris-Brest</p><!--bold-->
+            <div class="dishes">
+                <p class="bold">Paris-Brest</p><!--bold-->
                 <p>Revisité 18&euro;</p>
             </div>
-            <div>
-                <p>Macaron au chocolat d'exception</p>
+            <div class="dishes">
+                <p class="bold">Macaron au chocolat d'exception</p>
                 <p>Et glace à la vanille de Madagascar 22&euro;</p>
             </div>
-            <div>
-                <p>Mousse au chocolat</p>
+            <div class="dishes">
+                <p class="bold">Mousse au chocolat</p>
                 <p>Au piment d'espelette et à la truffe noire 23&euro;</p>
             </div>
         </div>
@@ -66,9 +66,9 @@
             <a href="#">Commander</a>
         </div>
         <footer>
-            <p>Ohmyfood</p>
-            <p>Proposer un restaurant</p>
-            <p>Devenir un partenaire</p>
+            <p><span id="title">Ohmyfood</span></p>
+            <p><a href="#"><i class="fas fa-utensils footer-icon"></i>Proposer un restaurant</a></p>
+            <p><a href="#"><i class="fas fa-hands-helping footer-icon"></i>Devenir un partenaire</a></p>
             <p><a href="#">Mentions légales</a></p>
             <p><a href="#">Contact</a></p>
         </footer>
