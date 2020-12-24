@@ -12,48 +12,45 @@
 <body>
     <div id="container">
         <header>
-            <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" id="logo"/>
-            <div id="presentation">
-                <p>Ohmyfood est une entreprise de commande de repas en ligne.</p>
-                <p>Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance.</p>
-                <p>Plus de perte de temps à consulter la carte. Nous souhaitons proposer à nos clients les menus de restaurants gastronomiques.</p>
-                <p>Développé à New-York dans un premier temps, nous souhaitons désormais élargir notre concept à la capitale de la gastronomie : Paris.</p>
+            <div id="header-logo">
+                <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" id="logo"/>
             </div>
             <div id="first"><!--map icon-->
                 <div id="search-bar">
-                    <form action="#">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <form action="" method="POST">
+                        <i class="fas fa-map-marker-alt"></i>
                         <input type="search" name="search" placeholder="Paris, Belleville"/>
                     </form>
                 </div>
-                <h2>Réservez le menu qui vous convient</h2>
-                <h4>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h4>
+                <h2>Réservez le menu qui </br>vous convient</h2>
+                <h4>Découvrez des restaurants d'exception,</br> sélectionnés par nos soins.</h4>
                 <a href="#restaurants">
                     <span class="explore-btn">Explorez nos restaurants</span>
                 </a>
             </div>
             <div id="second"><!--put icons and number-->
-            <h3>Fonctionnement</h3>
-                <!--<div class="operation"> list or div?
-                    <p><span class="number">1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+                <h3>Fonctionnement</h3>
+                <div class="operation"> 
+                    <p>
+                        <span class="number">1</span>
+                        <span class="icon"><i class="fas fa-mobile-alt "></i></span>
+                        Choisissez un restaurant
+                    </p>
                 </div>
                 <div class="operation">
-                    <p><span class="number">2</span><i class="fas fa-list-ul"></i>Composez votre menu</p>
+                    <p>
+                        <span class="number">2</span>
+                        <span class="icon"><i class="fas fa-list-ul "></i></span>
+                        Composez votre menu
+                    </p>
                 </div>
                 <div class="operation">
-                    <p><span class="number">3</span><i class="fas fa-store"></i>Dégustez au restaurant</p>color icon
-                </div> -->
-                <ul id="operation">
-                    <li>
-                        <span class="number">1</span><i class="fas fa-mobile-alt icon"></i>Choisissez un restaurant
-                    </li>
-                    <li>
-                        <span class="number">2</span><i class="fas fa-list icon"></i>Composez votre menu
-                    </li>
-                    <li id="operation-variant">
-                        <span class="number">3</span><i class="fas fa-store icon"></i>Dégustez au restaurant
-                    </li><!--color icon-->
-                </ul>
+                    <p>
+                        <span class="number">3</span>
+                        <span class="icon"><i class="fas fa-store icon-variant"></i></span>
+                        Dégustez au restaurant
+                    </p><!--color icon-->
+                </div>
             </div>
         </header>
         <section id="restaurants"><!--add animation heart icon-->
