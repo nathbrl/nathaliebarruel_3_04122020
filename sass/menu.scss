@@ -1,65 +1,66 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: black;
-    width: 900px;
-    margin: auto;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
   }
 .container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 900px;
-  height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
   background-color: white;
 }
 #menu-1,
 #menu-2,
 #menu-3,
 #menu-4{
-  background-color: rgba(235, 235, 235, 0.973);
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: #eaeaea;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  margin-top: -1.5rem;
+}
+.first-course,
+.second-course,
+.final-course{
+  margin-bottom: 55px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 a{
   text-decoration: none;
+  color: inherit;
 }
-.heading{
+header{
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-right: 60px;
+  text-align: center;
+}
+.arrow{
+  margin-top: 10px;
+}
+img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 h3{
-  display: inline-block;
-  padding-left: 10px;
-  border-bottom: solid 2px #99e2d0;
+  padding-left: 12px;
 }
 .menu-title{
   font-family: 'Shrikhand', cursive;
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-  padding-left: 11px;
-  padding-right: 11px;
+  padding-left: 12px;
+  padding-right: 12px;
+  justify-content: space-between;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 30px;
 }
 .menu-logo{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  width: 300px;
-}
-#title{
-  font-family: 'Shrikhand', cursive;
+  width: 220px;
+  height: auto;
 }
 .dishes{
   display: flex;
@@ -67,20 +68,20 @@ h3{
   justify-content: space-between;
   background-color: white;
   border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-shadow: 5px 6px 6px lightgray;
-  padding-left: 11px;
-  padding-right: 11px;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 .line{
-  padding: 5px;
+  border-bottom: solid 2px #99e2d0;
 }
 .picture{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 .arrow{
   color: black;
@@ -116,12 +117,16 @@ h3{
 /*footer*/
 footer{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: black;
+  flex-direction: column;
+  background-color: rgb(29, 29, 29);
   padding-left: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: white;
-  text-align: justify;
+}
+.title{
+  font-size: 20px;
+  font-style: italic;
+  font-family: 'Shrikhand', cursive;
+}
+.footer-icon{
+  color: white;
 }

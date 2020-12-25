@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0%;
@@ -101,7 +102,7 @@ a {
 .operation {
   border-radius: 25px;
   text-align: center;
-  padding-left: -1em;
+  /*valeur négative*/
   margin: 6px;
   background-color: #eaeaea;
   position: relative;

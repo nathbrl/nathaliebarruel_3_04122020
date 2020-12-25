@@ -10,62 +10,93 @@
     <title>Ohmyfood: La palette du goût</title>
 </head>
 <body>
-    <div class="container">
-        <div class="heading">
-            <header>
-                <a href="index.html"><i class="fas fa-arrow-left arrow"></i></a>
-                <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" class="menu-logo">
-            </header>
-        </div>
-        <img src="images/restaurants/lapalette.jpg" alt="Restaurant La palette du goût" class="picture">
+    <div class="container"> 
+        <header>
+            <a href="index.html" class="arrow">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <div class="heading">
+                <img src="images/logo/ohmyfood.png" alt="logo Ohmyfood" class="menu-logo"/>
+            </div>
+        </header>
+        <img src="images/restaurants/lapalette.jpg" alt="Restaurant La palette du goût">
         <div id="menu-1">
-                <div class="menu-title">   
-                    <div>La palette du goût</div>
-                    <span><i class="far fa-heart"></i></span>
-                </div>
+            <div class="menu-title">   
+                <div class="restaurant-title">La palette du goût</div>
+                <span><i class="far fa-heart"></i></span>
+            </div> 
             <div class="first-course">
-                <h3>ENTREES</h3><!--capitalise-->
+                <div>
+                    <h3><span class="line">ENTR</span>EES</h3><!--capitalise-->
+                </div>
                 <div class="dishes">
                     <p class="bold">Fricassée d'escargot</p><!--bold-->
-                    <p>Au piment d'espelette 25&euro;</p>
+                    <div class="side-dish">
+                        <div>Au piment d'espelette</div>
+                        <span class="price">25&euro;</span>
+                    </div>
                 </div>
                 <div class="dishes">
                     <p class="bold">Foie gras de canard mi-cuit</p>
-                    <p>Et ses copaux de truffe noire 35&euro;</p>
+                    <div class="side-dish">
+                        <div>Et ses copeaux de truffe noire</div>
+                        <span class="price">35&euro;</span>
+                    </div>
                 </div>
                 <div class="dishes">
-                    <p class="bold">oeuf au plat</p>
-                    <p>Assaisonné à la truffe sur lit de...20&euro;</p>
+                    <p class="bold">Oeuf au plat</p>
+                    <div class="side-dish">
+                        <div>Assaisonné à la truffe sur lit de...</div> 
+                        <span class="price">20&euro;</span>
+                    </div>
                 </div>
             </div>
             <div class="second-course">
-                <h3>PLATS</h3><!--capitalise-->
+                <h3><span class="line">PLAT</span>S</h3><!--capitalise-->
                 <div class="dishes">
-                    <p class="bold">Filet de boeuf aux herbes</p><!--bold-->
-                    <p>Accompagné de sa ribambelle de légu... 40&euro;</p>
+                    <p class="bold">FIlet de boeuf aux herbes</p><!--bold-->
+                    <div class="side-dish">
+                        <div>Accompagnées de sa ribambelle de légu...</div>
+                        <span class="price">40&euro;</span>
+                    </div>
                 </div>
                 <div class="dishes">
-                    <p class="bold">Parmentier de queu de boeuf</p>
-                    <p>À la truffe noire sur sa purée de panais 35&euro;</p>
+                    <p class="bold">Parmentier de queue de boeuf</p>
+                    <div class="side-dish">
+                        <div>À la truffe noire sur sa purée de panais</div>
+                        <span class="price">35&euro;</span>
+                    </div>
                 </div>
                 <div class="dishes">
-                    <p class="bold">Filet de turbot</p>
-                    <p>Aux agrumes 44&euro;</p>
+                    <p class="bold">Filet de Turbot</p>
+                    <div class="side-dish">
+                        <div>Aux agrumes</div>
+                        <span class="price">44&euro;</span>
+                    </div>
                 </div>
             </div>
             <div class="final-course">
-                <h3>DESSERTS</h3><!--capitalise-->
+                <h3><span class="line">DESS</span>ERTS</h3><!--capitalise-->
                 <div class="dishes">
                     <p class="bold">Paris-Brest</p><!--bold-->
-                    <p>Revisité 18&euro;</p>
+                    <div class="side-dish">
+                        <div>Revisité</div>
+                        <span class="price">18&euro;</span>
+                    </div>
                 </div>
                 <div class="dishes">
                     <p class="bold">Macaron au chocolat d'exception</p>
-                    <p>Et glace à la vanille de Madagascar 22&euro;</p>
+                    <div class="side-dish">
+                        <div>Et glace à la vanille de Madagascar</div>
+                        <span class="price">22&euro;</span>
+                    </div>
                 </div>
                 <div class="dishes">
                     <p class="bold">Mousse au chocolat</p>
-                    <p>Au piment d'espelette et à la truffe noire 23&euro;</p>
+                    <div class="side-dish">
+                        <div>Au piment d'espelette et à la truffe noire</div>
+                        <span class="price">23&euro;</span>
+                    </div>
                 </div>
             </div>
             <div class="order-btn">
@@ -74,9 +105,9 @@
                 </a>
             </div>
             <footer>
-                <p><span id="title">Ohmyfood</span></p>
+                <p class="title">Ohmyfood</p>
                 <p><a href="#"><i class="fas fa-utensils footer-icon"></i>Proposer un restaurant</a></p>
-                <p><a href="#"><i class="fas fa-hands-helping footer-icon"></i>Devenir un partenaire</a></p>
+                <p><a href="#"><i class="fas fa-hands-helping footer-icon"></i> un partenaire</a></p>
                 <p><a href="#">Mentions légales</a></p>
                 <p><a href="#">Contact</a></p>
             </footer>
