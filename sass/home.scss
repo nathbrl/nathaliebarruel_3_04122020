@@ -87,14 +87,9 @@ a{
     margin-right: 20px;
     margin-left: -1.5em;
 }
-#menu{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
-}
 img{
-    width: 380px;
+    min-width: 318px;
+    max-width: 360px;
     height: auto;
     max-height: 120px;
     border-top-left-radius: 20px;
@@ -105,8 +100,13 @@ img{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0 10px 0 10px;
     background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.menu-card{
+    margin-bottom: 30px;
 }
 .bold{
     font-weight: bold;
@@ -128,6 +128,22 @@ h4{
     padding: 5px 10px 5px 10px;
     color: darkgreen;
 }
+.heart{
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+  .heart-full{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+  .heart-empty{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 figure{
     display: flex;
     flex-direction: column;
@@ -135,7 +151,8 @@ figure{
     flex-wrap: nowrap;
     margin: 0;
     padding: 0;
-    width: 380px;
+    min-width: 318px;
+    max-width: 360px;
     height: auto;
     position: relative;
     background-color: white;
@@ -150,9 +167,6 @@ figcaption{
     padding-right: 20px;
     padding-top: 10px;
 }
-.heart:hover{
-    background: linear-gradient(#FF79DA, #9356DC);
-}
 .link{
     margin-bottom: 20px;
 }
@@ -161,7 +175,7 @@ footer{
     display: flex;
     flex-direction: column;
     background-color: black;
-    padding-left: 35px;
+    padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
