@@ -144,6 +144,9 @@ h4{
     top: 0;
     left: 0;
 }
+.heart-full:hover{
+    background: linear-gradient(left top, left bottom, from(#ff79da), to(#9356dc));
+}
 figure{
     display: flex;
     flex-direction: column;

@@ -211,6 +211,11 @@ h4 {
   left: 0;
 }
 
+.heart-full:hover {
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(bottom, left), color-stop(from(#ff79da)), to(to(#9356dc)));
+  background: linear-gradient(left top, left bottom, from(#ff79da), to(#9356dc));
+}
+
 figure {
   display: -webkit-box;
   display: -ms-flexbox;
