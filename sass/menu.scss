@@ -88,6 +88,15 @@ h3{
   box-shadow: 5px 6px 6px lightgray;
   padding-bottom: 5px;
   margin-bottom: 10px;
+  animation: Fadein 4s;
+}
+@keyframes Fadein{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .line{
   border-bottom: solid 2px #99e2d0;
