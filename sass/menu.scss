@@ -59,19 +59,26 @@ h3{
 }
 .heart{
   position: relative;
-  height: 30px;
-  width: 30px;
+  height: 16px;
+  width: 16px;
 }
-.heart-full{
+.heart .heart-full{
   position: absolute;
   top: 0;
   left: 0;
   display: none;
 }
-.heart-empty{
+.heart:hover .heart-full{
+  display: block;
+}
+.heart .heart-empty{
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
+}
+.heart:hover .heart-empty{
+  display: none;
 }
 .menu-logo{
   width: 220px;
