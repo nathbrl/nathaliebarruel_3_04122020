@@ -194,8 +194,8 @@ h4 {
 
 .heart {
   position: relative;
-  height: 30px;
-  width: 30px;
+  height: 16px;
+  width: 16px;
 }
 
 .heart .heart-full {
@@ -207,9 +207,12 @@ h4 {
 
 .heart:hover .heart-full {
   display: block;
-  height: 8px;
-  overflow: hidden;
+  height: 16px;
   width: 16px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(70deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heart-empty {

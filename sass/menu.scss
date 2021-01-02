@@ -59,8 +59,8 @@ h3{
 }
 .heart{
   position: relative;
-  height: 16px;
-  width: 16px;
+  height: 30px;
+  width: 30px;
 }
 .heart .heart-full{
   position: absolute;
@@ -70,15 +70,17 @@ h3{
 }
 .heart:hover .heart-full{
   display: block;
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  background: -webkit-linear-gradient(70deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.heart .heart-empty{
+.heart-empty{
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
-}
-.heart:hover .heart-empty{
-  display: none;
 }
 .menu-logo{
   width: 220px;
