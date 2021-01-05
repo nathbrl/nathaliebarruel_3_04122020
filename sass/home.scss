@@ -7,6 +7,32 @@ body{
     display: flex;
     flex-direction: column;
 }
+#loading-dots > div{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    display: inline-block;
+    animation: 1.5s bounce infinite ease-in-out both;
+}
+#loading-dots .bounce{
+    animation-delay: -0.30s;
+    background-color: #ff79da;
+}
+#loading-dots .bounce2{
+    animation-delay: -0.15s;
+    background-color: #9356dc;
+}
+.bounce3{
+    background-color: #99e2d0;
+}
+@keyframes bounce{
+    0%,80%,100%{
+        transform: scale(0);
+    }
+    40%{
+        transform: scale(1);
+    }
+}
 #header-logo{
     display: flex;
     justify-content: center;
