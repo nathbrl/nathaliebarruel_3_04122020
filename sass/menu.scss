@@ -90,8 +90,19 @@ h3{
   overflow: hidden;
   background: -webkit-linear-gradient(70deg, #ff79da, #9356dc);
   background-clip: text;
-  /*-webkit-background-clip: text; erreur validateur css ???*/
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: 0.3s remplissage  ease-in both;
+  transform-origin: bottom;
+}
+@keyframes remplissage{
+  0%{
+      transform: scale(0);
+  }
+  100%{
+      transform: scale(1);
+      transition: none;
+  }
 }
 .heart-empty{
   position: absolute;
@@ -108,27 +119,34 @@ h3{
   justify-content: space-between;
   background-color: white;
   border-radius: 15px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
   box-shadow: 5px 6px 6px lightgray;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  width: 85%;
+  padding-bottom: 6px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .dishes{
   display: flex;
   margin-bottom: 10px;
 }
 .dishes-animation{
-  position: relative;
-  width: 20%;
+  position: absolute;
+  width: 75px;
+  right: -75px;
   height: 73px;
   display: flex;
   justify-content: center;
   background-color: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  /*visibility: hidden;*/
+  visibility: visible;
+}
+.dishes:hover .dishes-animation{
+  visibility: visible;
+  width: 20%;
+  transform-origin: right;
 }
 .check-circle{
   background-color: #fff;
@@ -145,7 +163,7 @@ h3{
   transition: transform 1s;
 }
 .check{
-  padding: 6px 8px 6px 8px;;
+  padding: 6px 8px 6px 8px;
 }
 .line{
   border-bottom: solid 2px #99e2d0;

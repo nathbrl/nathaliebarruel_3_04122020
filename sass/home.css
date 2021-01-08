@@ -32,11 +32,11 @@ body {
 #loading-dots .bounce2 {
   -webkit-animation-delay: -0.15s;
           animation-delay: -0.15s;
-  background-color: #9356dc;
+  background-color: #99e2d0;
 }
 
 .bounce3 {
-  background-color: #99e2d0;
+  background-color: #9356dc;
 }
 
 @-webkit-keyframes bounce {
@@ -269,6 +269,32 @@ h4 {
   background: -webkit-linear-gradient(70deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: 0.3s remplissage  ease;
+          animation: 0.3s remplissage  ease;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes remplissage {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes remplissage {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .heart-empty {
