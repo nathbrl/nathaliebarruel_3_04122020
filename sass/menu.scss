@@ -101,7 +101,6 @@ h3{
   }
   100%{
       transform: scale(1);
-      transition: none;
   }
 }
 .heart-empty{
@@ -112,6 +111,12 @@ h3{
 .menu-logo{
   width: 220px;
   height: auto;
+}
+.side-dish{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-overflow: ellipsis;
 }
 .dish-name{
   display: flex;
@@ -143,10 +148,25 @@ h3{
   border-bottom-right-radius: 15px;
   visibility: visible;
 }
+.dishes-animation:hover{
+  transform: rotate(180deg);
+  transition-duration: .5s;
+}
 .dishes:hover .dishes-animation{
   visibility: visible;
   width: 20%;
   transform-origin: right;
+  animation: slide 0.2s ease;
+  visibility: visible;
+  transform: translateX(-100%);
+}
+@keyframes slide{
+  0%{
+      transform: scale(0);
+  }
+  100%{
+      transform: scale(1);
+  }
 }
 .check-circle{
   background-color: #fff;
@@ -159,8 +179,8 @@ h3{
   align-self: center;
 }
 .check-circle:hover{
-  transform: rotate(360deg);
-  transition: transform 1s;
+  transform: rotate(180deg);
+  transition-duration: .5s;
 }
 .check{
   padding: 6px 8px 6px 8px;
@@ -196,11 +216,6 @@ h3{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-}
-.side-dish{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .price{
   font-weight: bold;

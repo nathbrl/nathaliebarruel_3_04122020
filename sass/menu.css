@@ -146,8 +146,6 @@ h3 {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: none;
-    transition: none;
   }
 }
 
@@ -159,8 +157,6 @@ h3 {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: none;
-    transition: none;
   }
 }
 
@@ -173,6 +169,20 @@ h3 {
 .menu-logo {
   width: 220px;
   height: auto;
+}
+
+.side-dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-overflow: ellipsis;
 }
 
 .dish-name {
@@ -222,11 +232,45 @@ h3 {
   visibility: visible;
 }
 
+.dishes-animation:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
 .dishes:hover .dishes-animation {
   visibility: visible;
   width: 20%;
   -webkit-transform-origin: right;
           transform-origin: right;
+  -webkit-animation: slide 0.2s ease;
+          animation: slide 0.2s ease;
+  visibility: visible;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .check-circle {
@@ -246,12 +290,10 @@ h3 {
 }
 
 .check-circle:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .check {
@@ -305,19 +347,6 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.side-dish {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .price {
