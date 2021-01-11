@@ -67,9 +67,9 @@ body{
     padding-bottom: 15px;
 }
 #logo{
-    width: 80%;
+    width: 400px;
     height: auto;
-}
+} 
 #first{
     display: flex;
     flex-direction: column;
@@ -102,7 +102,10 @@ p{
     background: linear-gradient(#ff79da, #9356dc);
     border-radius: 25px;
     text-align: center;
-    padding: 6px 15px 6px 15px;
+    padding: 10px 15px 10px 15px;
+}
+.explore-btn:hover{
+    box-shadow: 0px 4px 4px darkgray;
 }
 a{
     text-decoration: none;
@@ -112,9 +115,20 @@ a{
 }
 #second{
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 20px;
     margin-bottom: 60px;
 }
+#functioning{
+    padding-right: 15px;
+}
+.presentation{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}   
 .icon-variant{
     color: #9356dc;
 }
@@ -134,21 +148,19 @@ a{
     justify-content: space-evenly;
     border-radius: 25px;
     text-align: center;
-    margin: 6px 0 6px 12px;
+    margin: 6px 10px 6px 12px;
     background-color: #eaeaea;
     position: relative;
     width: 300px;
-    padding: 8px;
+    padding: 11px 8px 11px 8px;
 }
 .icon{
     width: 30px;
     color: #7e7e7e;
 }
 img{
-    min-width: 318px;
-    max-width: 360px;
-    height: auto;
-    max-height: 120px;
+    width: 800px;
+    height: 190px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -158,12 +170,12 @@ img{
     flex-direction: row;
     flex-wrap: nowrap;
     background-color: #eaeaea;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     margin-bottom: 60px;
 }
 .menu-card{
     margin-bottom: 30px;
+
 }
 .bold{
     font-weight: bold;
@@ -173,6 +185,7 @@ img{
 }
 h2, h3{
     font-weight: bold;
+    margin: 20px;
 }
 h4{
     font-weight: normal;
@@ -227,8 +240,7 @@ figure{
     flex-wrap: nowrap;
     margin: 0;
     padding: 0;
-    min-width: 318px;
-    max-width: 360px;
+    width: 800px;
     height: auto;
     position: relative;
     background-color: white;
@@ -250,7 +262,7 @@ figcaption{
 footer{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #1d1d1d;
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -264,4 +276,30 @@ footer{
 .footer-icon{
     color: white;
     padding-right: 10px;
+}
+@media only screen and (min-width: 320px) and (max-width: 730px){
+    #second{
+        flex-direction: column;
+    }
+    #restaurants{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: #eaeaea;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    figure{
+        min-width: 318px;
+        max-width: 360px;
+    }
+    img{
+        min-width: 318px;
+        max-width: 360px;
+        max-height: 120px;
+    }
+    #logo{
+        width: 220px;
+    } 
 }
