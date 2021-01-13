@@ -172,6 +172,8 @@ img{
     background-color: #eaeaea;
     justify-content: center;
     margin-bottom: 60px;
+    background: linear-gradient(white,#99e2d0,white,#ff79da);
+    
 }
 .menu-card{
     margin-bottom: 30px;
@@ -301,5 +303,8 @@ footer{
     }
     #logo{
         width: 220px;
-    } 
+    }
+    #restaurants{
+        background: #eaeaea;
+    }
 }

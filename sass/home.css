@@ -280,6 +280,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#99e2d0), color-stop(white), to(#ff79da));
+  background: linear-gradient(white, #99e2d0, white, #ff79da);
 }
 
 .menu-card {
@@ -478,6 +480,9 @@ footer {
   }
   #logo {
     width: 220px;
+  }
+  #restaurants {
+    background: #eaeaea;
   }
 }
 /*# sourceMappingURL=home.css.map */
