@@ -132,6 +132,19 @@ h3{
   flex-direction: row;
   justify-content: space-between;
 }
+.dishes:hover .side-dish{
+  transform-origin: right;
+  transform: translateX(-160px);
+  animation: slidebis .5 ease;
+}
+@keyframes slidebis{
+  0%{
+      transform: scale(0);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
 .side-dish-text{
   text-overflow: ellipsis;
   overflow: hidden;
@@ -184,6 +197,9 @@ h3{
   100%{
       transform: scale(1);
   }
+}
+.dishes:hover .check-circle{
+  transform: rotate(540deg);
 }
 .check-circle{
   background-color: #fff;

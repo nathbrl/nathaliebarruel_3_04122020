@@ -171,7 +171,6 @@ img{
     flex-wrap: nowrap;
     background-color: #eaeaea;
     justify-content: center;
-    margin-bottom: 60px;
     background: linear-gradient(white,#99e2d0,white,#ff79da);
     
 }
@@ -246,8 +245,10 @@ figure{
     height: auto;
     position: relative;
     background-color: white;
-    border-radius: 20px; 
-    box-shadow: 5px 6px 6px lightgray;
+    border-radius: 20px;
+}
+figure:hover{
+    box-shadow: 5px 6px 6px #9956dc;
 }
 figcaption{
     display: flex;
@@ -295,6 +296,7 @@ footer{
     figure{
         min-width: 318px;
         max-width: 360px;
+        box-shadow: 5px 6px 6px lightgray;
     }
     img{
         min-width: 318px;

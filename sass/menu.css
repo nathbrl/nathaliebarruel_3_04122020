@@ -209,6 +209,37 @@ h3 {
           justify-content: space-between;
 }
 
+.dishes:hover .side-dish {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: translateX(-160px);
+          transform: translateX(-160px);
+  -webkit-animation: slidebis .5 ease;
+          animation: slidebis .5 ease;
+}
+
+@-webkit-keyframes slidebis {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes slidebis {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .side-dish-text {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -298,6 +329,11 @@ h3 {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.dishes:hover .check-circle {
+  -webkit-transform: rotate(540deg);
+          transform: rotate(540deg);
 }
 
 .check-circle {

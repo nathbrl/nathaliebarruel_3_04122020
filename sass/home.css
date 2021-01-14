@@ -279,7 +279,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#99e2d0), color-stop(white), to(#ff79da));
   background: linear-gradient(white, #99e2d0, white, #ff79da);
 }
@@ -395,8 +394,11 @@ figure {
   position: relative;
   background-color: white;
   border-radius: 20px;
-  -webkit-box-shadow: 5px 6px 6px lightgray;
-          box-shadow: 5px 6px 6px lightgray;
+}
+
+figure:hover {
+  -webkit-box-shadow: 5px 6px 6px #9956dc;
+          box-shadow: 5px 6px 6px #9956dc;
 }
 
 figcaption {
@@ -472,6 +474,8 @@ footer {
   figure {
     min-width: 318px;
     max-width: 360px;
+    -webkit-box-shadow: 5px 6px 6px lightgray;
+            box-shadow: 5px 6px 6px lightgray;
   }
   img {
     min-width: 318px;
