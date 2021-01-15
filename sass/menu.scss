@@ -2,13 +2,21 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: ghostwhite;
 }
 .container{
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: $color-white;
 }
+/*couleurs*/
+$primary-color:#ff79da;
+$secondary-color: #9956dc;
+$tertiary-color: #99e2d0;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #eaeaea;
+$footer-color: #1d1d1d;
+
 #menu-1,
 #menu-2,
 #menu-3,
@@ -23,7 +31,7 @@ body {
 .container-2,
 .container-3,
 .container-4{
-  background: linear-gradient(white,#99e2d0,white,#ff79da);
+  background: linear-gradient($color-white,$tertiary-color,$color-white, $primary-color);
 }
 .first-course,
 .second-course,
@@ -103,7 +111,7 @@ h3{
   height: 30px;
   width: 30px;
   overflow: hidden;
-  background: -webkit-linear-gradient(70deg, #ff79da, #9356dc);
+  background: -webkit-linear-gradient(70deg, $primary-color, $secondary-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -134,7 +142,6 @@ h3{
 }
 .dishes:hover .side-dish{
   transform-origin: right;
-  transform: translateX(-160px);
   animation: slidebis .5 ease;
 }
 @keyframes slidebis{
@@ -145,16 +152,11 @@ h3{
       transform: scale(1);
   }
 }
-.side-dish-text{
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
 .dish-name{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: $color-white;
   border-radius: 15px;
   padding-left: 6px;
   padding-right: 6px;
@@ -176,11 +178,10 @@ h3{
   height: 74px;
   display: flex;
   justify-content: center;
-  background-color: #99e2d0;
+  background-color: $tertiary-color;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   visibility: hidden;
-  margin-left: 20px;
   transition-duration: .5s;
 }
 .dishes:hover .dishes-animation{
@@ -202,8 +203,8 @@ h3{
   transform: rotate(540deg);
 }
 .check-circle{
-  background-color: #fff;
-  color: #99e2d0;
+  background-color: $color-white;
+  color: $tertiary-color;
   border-radius: 50%;
   padding: 1px;
   height: 30px;
@@ -218,7 +219,7 @@ h3{
   transform: rotate(180deg);
 }
 .line{
-  border-bottom: solid 2px #99e2d0;
+  border-bottom: solid 2px $tertiary-color;
 }
 .order-btn{
   display: flex;
@@ -230,30 +231,30 @@ h3{
   box-shadow: 0px 4px 4px darkgray;
 }
 .order{
-  color: white;
-  background: linear-gradient(#ff79da, #9356dc);
+  color: $color-white;
+  background: linear-gradient($primary-color, $secondary-color);
   border-radius: 25px;
   text-align: center;
   padding: 8px 40px 8px 40px;
 }
-.bold{
+p{
   font-weight: bold;
   display: block;
   flex-direction: row;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .price{
   font-weight: bold;
+}
+.dishes:hover .price{
+  transform: translateX(-160px);
 }
 /*footer*/
 footer{
   display: flex;
   flex-direction: column;
-  background-color: #1d1d1d;
+  background-color: $footer-color;
   padding-left: 15px;
-  color: white;
+  color: $color-white;
 }
 .title{
   font-size: 20px;
@@ -279,7 +280,7 @@ footer{
   #menu-4{
   min-width: 320px;
   max-width: 730px;
-  background-color: #eaeaea;
+  background-color: $color-gray;
   }
   .dishes:hover .dishes-animation{
     width: 100px;
@@ -289,5 +290,11 @@ footer{
   .container-3,
   .container-4{
     background-image: none;
+  }
+  .dishes-animation{
+    right: -55px;
+  }
+  .dishes:hover .price{
+    transform: translateX(-95px);
   }
 }

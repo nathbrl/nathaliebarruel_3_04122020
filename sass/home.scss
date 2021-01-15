@@ -7,6 +7,14 @@ body{
     display: flex;
     flex-direction: column;
 }
+/*couleurs*/
+$primary-color:#ff79da;
+$secondary-color: #9956dc;
+$tertiary-color: #99e2d0;
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #eaeaea;
+$footer-color: #1d1d1d;
 #loading-text{
     font-family: 'Shrikhand', cursive;
     font-size: 25px;
@@ -17,7 +25,7 @@ body{
     width: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: $color-white;
     animation: loader .01s;
     animation-delay: 3s;
     animation-fill-mode: none;
@@ -43,14 +51,14 @@ body{
 }
 #loading-dots .bounce{
     animation-delay: -0.30s;
-    background-color: #ff79da;
+    background-color: $primary-color;
 }
 #loading-dots .bounce2{
     animation-delay: -0.15s;
-    background-color:  #99e2d0;
+    background-color:  $tertiary-color;
 }
 .bounce3{
-    background-color: #9356dc;
+    background-color: $secondary-color;
 }
 @keyframes bounce{
     0%,80%,100%{
@@ -73,7 +81,7 @@ body{
 #first{
     display: flex;
     flex-direction: column;
-    background-color: #eaeaea;
+    background-color: $color-gray;
     padding-bottom: 30px;
     text-align: center;
     margin-bottom: 10px;
@@ -98,8 +106,8 @@ p{
     font-size: 14px;
 }
 .explore-btn{
-    color: white;
-    background: linear-gradient(#ff79da, #9356dc);
+    color: $color-white;
+    background: linear-gradient($primary-color, $secondary-color);
     border-radius: 25px;
     text-align: center;
     padding: 10px 15px 10px 15px;
@@ -130,11 +138,11 @@ a{
     font-size: 16px;
 }   
 .icon-variant{
-    color: #9356dc;
+    color: $secondary-color;
 }
 .number{
-    color: white;
-    background-color: #9356dc;
+    color: $color-white;
+    background-color: $secondary-color;
     border-radius: 50%;
     padding: 5px 10px 5px 8px;
     margin-left: -1em;
@@ -149,7 +157,7 @@ a{
     border-radius: 25px;
     text-align: center;
     margin: 6px 10px 6px 12px;
-    background-color: #eaeaea;
+    background-color: $color-gray;
     position: relative;
     width: 300px;
     padding: 11px 8px 11px 8px;
@@ -169,9 +177,9 @@ img{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: #eaeaea;
+    background-color: $color-gray;
     justify-content: center;
-    background: linear-gradient(white,#99e2d0,white,#ff79da);
+    background: linear-gradient($color-white,$tertiary-color,$color-white,$primary-color);
     
 }
 .menu-card{
@@ -195,7 +203,7 @@ h4{
     position: absolute;
     top: 6%;
     right: 5%;
-    background: #99e2d0;
+    background: $tertiary-color;
     padding: 5px 10px 5px 10px;
     color: darkgreen;
 }
@@ -244,11 +252,11 @@ figure{
     width: 800px;
     height: auto;
     position: relative;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 20px;
 }
 figure:hover{
-    box-shadow: 5px 6px 6px #9956dc;
+    box-shadow: 5px 6px 6px $secondary-color;
 }
 figcaption{
     display: flex;
@@ -265,11 +273,11 @@ figcaption{
 footer{
     display: flex;
     flex-direction: column;
-    background-color: #1d1d1d;
+    background-color: $footer-color;
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: $color-white;
 }
 #title{
     font-family: 'Shrikhand', cursive;
@@ -288,7 +296,7 @@ footer{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        background-color: #eaeaea;
+        background-color: $color-gray;
         display: flex;
         flex-direction: column;
         margin-bottom: 60px;
@@ -297,6 +305,9 @@ footer{
         min-width: 318px;
         max-width: 360px;
         box-shadow: 5px 6px 6px lightgray;
+    }
+    figure:hover{
+        box-shadow: none;
     }
     img{
         min-width: 318px;
@@ -307,6 +318,6 @@ footer{
         width: 220px;
     }
     #restaurants{
-        background: #eaeaea;
+        background: $color-gray;
     }
 }
