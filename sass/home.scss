@@ -3,10 +3,6 @@ body{
     margin: 0%;
     padding: 0%;
 }
-#container{
-    display: flex;
-    flex-direction: column;
-}
 /*couleurs*/
 $primary-color:#ff79da;
 $secondary-color: #9956dc;
@@ -15,9 +11,9 @@ $color-white: #fff;
 $color-black: #000;
 $color-gray: #eaeaea;
 $footer-color: #1d1d1d;
-#loading-text{
-    font-family: 'Shrikhand', cursive;
-    font-size: 25px;
+#container{
+    display: flex;
+    flex-direction: column;
 }
 #loader-wrapper{
     position: fixed;
@@ -68,6 +64,10 @@ $footer-color: #1d1d1d;
         transform: scale(1);
     }
 }
+#loading-text{
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+}
 #header-logo{
     display: flex;
     justify-content: center;
@@ -75,9 +75,15 @@ $footer-color: #1d1d1d;
     padding-bottom: 15px;
 }
 #logo{
-    width: 400px;
+    width: 390px;
     height: auto;
-} 
+}
+.presentation{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
 #first{
     display: flex;
     flex-direction: column;
@@ -131,12 +137,10 @@ a{
 #functioning{
     padding-right: 15px;
 }
-.presentation{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-}   
+.icon{
+    width: 30px;
+    color: #7e7e7e;
+}
 .icon-variant{
     color: $secondary-color;
 }
@@ -162,9 +166,14 @@ a{
     width: 300px;
     padding: 11px 8px 11px 8px;
 }
-.icon{
-    width: 30px;
-    color: #7e7e7e;
+/*section*/
+#restaurants{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: $color-gray;
+    justify-content: center;
+    background: linear-gradient($color-white,$tertiary-color,$color-white,$primary-color);
 }
 img{
     width: 800px;
@@ -173,18 +182,19 @@ img{
     border-top-right-radius: 20px;
     object-fit: cover;
 }
-#restaurants{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: $color-gray;
-    justify-content: center;
-    background: linear-gradient($color-white,$tertiary-color,$color-white,$primary-color);
-    
+.link{
+    margin-bottom: 20px;
 }
 .menu-card{
     margin-bottom: 30px;
-
+}
+.new{
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    background: $tertiary-color;
+    padding: 5px 10px 5px 10px;
+    color: darkgreen;
 }
 .bold{
     font-weight: bold;
@@ -199,14 +209,7 @@ h2, h3{
 h4{
     font-weight: normal;
 }
-.new{
-    position: absolute;
-    top: 6%;
-    right: 5%;
-    background: $tertiary-color;
-    padding: 5px 10px 5px 10px;
-    color: darkgreen;
-}
+/*animation heart*/
 .heart{
     position: relative;
     height: 16px;
@@ -226,7 +229,7 @@ h4{
     background: -webkit-linear-gradient(70deg, #ff79da, #9356dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: 0.3s remplissage  ease;
+    animation: 0.3s remplissage ease;
     transform-origin: bottom;
 }
 @keyframes remplissage{
@@ -266,11 +269,8 @@ figcaption{
     padding-right: 20px;
     padding-top: 10px;
 }
-.link{
-    margin-bottom: 20px;
-}
 /*footer*/
-footer{
+.footer-wrap,ul{
     display: flex;
     flex-direction: column;
     background-color: $footer-color;
@@ -278,15 +278,20 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
     color: $color-white;
+    list-style-type: none;
+}
+li{
+    margin-bottom: 20px;
 }
 #title{
     font-family: 'Shrikhand', cursive;
     font-style: italic;
-    font-size: 15px;
+    font-size: 22px;
 }
 .footer-icon{
-    color: white;
-    padding-right: 10px;
+    color: $color-white;
+    width: 20px;
+    margin-right: .5rem;
 }
 @media only screen and (min-width: 320px) and (max-width: 730px){
     #second{
