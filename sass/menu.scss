@@ -43,6 +43,15 @@ $footer-color: #1d1d1d;
   transition: all 1.5s;
   -webkit-transition: all 1.5s;
 }
+.first-course{
+  animation-delay: .2s;
+}
+.second-course{
+  animation-delay: .5s;
+}
+.final-course{
+  animation-delay: .9s;
+}
 /*menu animation*/
 @keyframes fadein{
   0% {
@@ -76,7 +85,7 @@ header{
 }
 img,.picture{
   width: 70%;
-  height: 500px;
+  height: 480px;
   border-radius: 30px;
   object-fit: cover;
   display: block;
@@ -139,7 +148,7 @@ h3{
 }
 
 .line{
-  border-bottom: solid 2px $tertiary-color;
+  border-bottom: solid 3px $tertiary-color;
 }
 .dishes{
   display: flex;
@@ -214,18 +223,10 @@ p{
 }
 .dishes:hover .side-dish{
   transform-origin: right;
-  animation: slidebis .5 ease;
-}
-@keyframes slidebis{
-  0%{
-      transform: scale(0);
-  }
-  100%{
-      transform: scale(1);
-  }
 }
 .dishes:hover .check-circle{
-  transform: rotate(540deg);
+  transform: rotate(720deg);
+  transition-duration: .5s;
 }
 .check-circle{
   background-color: $color-white;
@@ -239,7 +240,6 @@ p{
 }
 .check{
   padding: 6px 8px 6px 8px;
-  transform: rotate(180deg);
 }
 .order-btn{
   display: flex;
@@ -249,6 +249,7 @@ p{
 }
 .order:hover{
   box-shadow: 0px 4px 4px darkgray;
+  filter: brightness(1.2);
 }
 .order{
   color: $color-white;

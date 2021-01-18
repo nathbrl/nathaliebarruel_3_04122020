@@ -175,7 +175,12 @@ input {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
+}
+
+#presentation {
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
 }
 
 .explore-btn {
@@ -190,6 +195,8 @@ p {
 .explore-btn:hover {
   -webkit-box-shadow: 0px 4px 4px darkgray;
           box-shadow: 0px 4px 4px darkgray;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 a {
