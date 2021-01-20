@@ -153,7 +153,7 @@ body {
   background-color: #eaeaea;
   padding-bottom: 30px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 input {
@@ -163,6 +163,7 @@ input {
   font-weight: bold;
   color: black;
   padding-left: 15px;
+  font-size: 14px;
 }
 
 #search-bar {
@@ -367,7 +368,7 @@ h4 {
   overflow: hidden;
   background: -webkit-linear-gradient(70deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-animation: 0.3s remplissage ease;
           animation: 0.3s remplissage ease;
   -webkit-transform-origin: bottom;

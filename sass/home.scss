@@ -94,7 +94,7 @@ $footer-color: #1d1d1d;
     background-color: $color-gray;
     padding-bottom: 30px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 input{
     border: none;
@@ -103,6 +103,7 @@ input{
     font-weight: bold;
     color: black;
     padding-left: 15px;
+    font-size: 14px;
 }
 #search-bar{
     width: 100%;
@@ -243,7 +244,7 @@ h4{
     overflow: hidden;
     background: -webkit-linear-gradient(70deg, #ff79da, #9356dc);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     animation: 0.3s remplissage ease;
     transform-origin: bottom;
 }
