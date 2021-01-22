@@ -26,8 +26,6 @@ body {
           animation: loader .01s;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s;
   -webkit-animation-fill-mode: both;
@@ -164,6 +162,12 @@ input {
   color: black;
   padding-left: 15px;
   font-size: 14px;
+  text-align: center;
+  width: 130px;
+}
+
+input:focus {
+  outline: none;
 }
 
 #search-bar {

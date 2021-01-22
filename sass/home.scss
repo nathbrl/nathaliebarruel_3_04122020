@@ -24,7 +24,6 @@ $footer-color: #1d1d1d;
     background-color: $color-white;
     animation: loader .01s;
     animation-delay: 3s;
-    animation-fill-mode: none;
     animation-delay: 1.75s;
     animation-fill-mode: both;
     z-index: 10000;
@@ -104,6 +103,11 @@ input{
     color: black;
     padding-left: 15px;
     font-size: 14px;
+    text-align: center;
+    width: 130px;
+}
+input:focus{
+    outline: none;
 }
 #search-bar{
     width: 100%;
